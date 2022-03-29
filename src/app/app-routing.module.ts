@@ -8,6 +8,9 @@ import { UserComponent } from './user/user.component';
 import { StudentComponent } from './student/student.component';
 import { StudentDetailComponent } from './student-detail/student-detail.component';
 import { StudentFormComponent } from './student-form/student-form.component';
+import { PostComponent } from './post/post.component';
+import { PostFormComponent } from './post-form/post-form.component';
+import { PostDetailComponent } from './post-detail/post-detail.component';
 
 const routes: Routes = [
   {
@@ -41,6 +44,22 @@ const routes: Routes = [
   {
     path: 'student/form/:id',
     component: StudentFormComponent
+  },
+  {
+    path: 'post',
+    component: PostComponent
+  },
+  {
+    path: 'post/form',
+    component: PostFormComponent,
+  },
+  {
+    path: 'post/form/:id',
+    component: PostFormComponent
+  },
+  {
+    path: 'post/:id',
+    component: PostDetailComponent
   }
 ];
 

@@ -16,12 +16,16 @@ import { StudentFormComponent } from './student-form/student-form.component';
 
 // import form
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { StudentService } from './services/student.service';
 
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { AsideComponent } from './layout/aside/aside.component';
+import { PostDetailComponent } from './post-detail/post-detail.component';
+import { PostFormComponent } from './post-form/post-form.component';
+import { PostComponent } from './post/post.component';
 
 
 @NgModule({
@@ -36,13 +40,17 @@ import { AsideComponent } from './layout/aside/aside.component';
     StudentFormComponent,
     HeaderComponent,
     FooterComponent,
-    AsideComponent
+    AsideComponent,
+    PostDetailComponent,
+    PostFormComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [StudentService],

@@ -1,0 +1,30 @@
+<h4>post</h4>
+
+<div class="container">
+    <a routerLink="/post/form" class="btn btn-danger">ADD</a>
+
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">title</th>
+                <th scope="col">content</th>
+                <th scope="col">Status</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let item of posts">
+            <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.title}}</td>
+                <td>{{item.content}}</td>
+                <td>{{item.status}}</td>
+                <td>
+                    <a routerLink="/post/form/{{item.id}}" class="btn btn-danger">Edit</a>
+                    <button class="btn btn-danger mx-4" (click)="remove(item.id)">Remove</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

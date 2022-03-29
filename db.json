@@ -25,5 +25,49 @@
       "class": "webd",
       "id": 5
     }
+  ],
+  "posts": [
+    {
+      "id": 0,
+      "title": "asdfasdf",
+      "content": "argsreger43g345",
+      "status": 0
+    },
+    {
+      "id": 1,
+      "title": "asdfasdf",
+      "content": "argsreger43g345",
+      "status": 0
+    },
+    {
+      "id": 2,
+      "title": "asdfasdf",
+      "content": "argsreger43g345",
+      "status": 0
+    },
+    {
+      "id": 3,
+      "title": "asdfasdf",
+      "content": "argsreger43g345",
+      "status": 0
+    },
+    {
+      "title": "asfcsdcvsdvs",
+      "content": "sdvdsvdsv",
+      "status": "1",
+      "id": 4
+    },
+    {
+      "title": "",
+      "content": "",
+      "status": "0",
+      "id": 5
+    },
+    {
+      "title": "d",
+      "content": "dddddddddddddd",
+      "status": "0",
+      "id": 6
+    }
   ]
 }
