@@ -19,6 +19,10 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { StudentService } from './services/student.service';
 
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { AsideComponent } from './layout/aside/aside.component';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +33,10 @@ import { StudentService } from './services/student.service';
     ProductDetailsComponent,
     StudentComponent,
     StudentDetailComponent,
-    StudentFormComponent
+    StudentFormComponent,
+    HeaderComponent,
+    FooterComponent,
+    AsideComponent
   ],
   imports: [
     BrowserModule,

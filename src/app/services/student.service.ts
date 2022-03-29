@@ -23,5 +23,13 @@ export class StudentService {
     return this.http.delete(`${apiUrl}/${id}`)
   }
 
+  createStudent(obj: any){
+    return this.http.post(apiUrl, obj)
+  }
+
+  updateStudent(id: number, obj: any){
+    return this.http.put(`${apiUrl}/${id}`, obj)
+  }
+
 
 }

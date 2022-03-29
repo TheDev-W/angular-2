@@ -3,15 +3,13 @@
 <app-products></app-products> -->
 
 
-<header>HEADER</header>
-<nav>
-  <ul>
-    <li><a routerLink="/products">Products</a></li>
-    <li><a routerLink="/user">User</a></li>
-    <li><a routerLink="/login">Login</a></li>
-  </ul>
-</nav>
-<aside>ASIDE</aside>
-<main>
+<app-header></app-header>
+<app-aside></app-aside>
+
+
+<main class="container-fluid pt-4" style="min-height: 90vh;">
   <router-outlet></router-outlet>
 </main>
+
+<app-footer></app-footer>
+

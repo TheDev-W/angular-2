@@ -11,10 +11,6 @@ import { StudentFormComponent } from './student-form/student-form.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: AppComponent
-  },
-  {
     path: 'products',
     component: ProductsComponent
   },
@@ -35,11 +31,15 @@ const routes: Routes = [
     component: StudentComponent
   },
   {
-    path: 'student/:id',
+    path: 'student/details/:id',
     component: StudentDetailComponent
   },
   {
-    path: 'addstudent',
+    path: 'student/form',
+    component: StudentFormComponent
+  },
+  {
+    path: 'student/form/:id',
     component: StudentFormComponent
   }
 ];

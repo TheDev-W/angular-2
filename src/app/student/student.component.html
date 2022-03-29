@@ -1,3 +1,7 @@
+<h3>List Students</h3>
+<a routerLink="/student/form" class="btn btn-danger">ADD</a>
+
+
 <table class="table table-striped">
   <thead>
     <tr>
@@ -11,11 +15,11 @@
     <tr>
       <td>{{item.id}}</td>
       <td>
-        <a routerLink="/student/{{item.id}}">{{item.name}}</a>
+        <a routerLink="/student/details/{{item.id}}">{{item.name}}</a>
       </td>
       <td>{{item.class}}</td>
       <td>
-        <button class="btn btn-danger">Edit</button>
+        <a routerLink="/student/form/{{item.id}}" class="btn btn-danger">Edit</a>
         <button class="btn btn-danger mx-4" (click)="remove(item.id)">Remove</button>
       </td>
     </tr>
